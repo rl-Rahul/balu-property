@@ -1,0 +1,64 @@
+security:
+    # https://symfony.com/doc/current/security.html#c-hashing-passwords
+    password_hashers:
+        App\Entity\User:
+            algorithm: bcrypt
+
+    enable_authenticator_manager: true
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: property
+        # used to reload user from session & other features (e.g. switch_user)
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            pattern: ^/api/2.0.
+            lazy: true
+            provider: app_user_provider
+            security: true
+            stateless: true
+            oauth2: true
+#            entry_point: 'security.authenticator.guard.main.0'
+#            guard:
+#                authenticators:
+#                    - App\Security\SocialAuthenticator
+        api_token:
+            pattern: ^/api/token$
+            security: false
+
+        api_doc:
+            pattern: ^/api/doc
+            security: true
+            stateless: true
+            oauth2: true
+
+    access_control:
+        - { path: ^/api/doc$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/document/view, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/register/user$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/forgot-password$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/reset-password$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/verify-token/register$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/verify-token/password$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/property/administration-confirmation$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/property/user-details$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/register/user$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/company/category-list, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/payment/webhook, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/web/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/register/guest/user, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/secured/verify-guest-user, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/ticket/info/.*$, role: [IS_AUTHENTICATED_ANONYMOUSLY, IS_AUTHENTICATED_FULLY] }
+        - { path: ^/api/2.0/defaults/file/upload, role: [IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/api/2.0/user/check/email-exists, role: [IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/api/2.0/secured/validate/guest-user$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/user/update$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/2.0/defaults/file/data-url-upload$, role: [IS_AUTHENTICATED_FULLY, IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/api/2.0, roles: IS_AUTHENTICATED_FULLY }

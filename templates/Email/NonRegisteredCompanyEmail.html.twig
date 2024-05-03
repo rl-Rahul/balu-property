@@ -1,0 +1,21 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'hello' |trans({}, 'messages', __default ) }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block content %}
+    {% autoescape false %}
+        {{ 'nonRegisteredEmailIntroContent' |trans({}, 'messages', __default ) }} <br>
+        {{ 'nonRegisteredEmailLinkContentPrefix' |trans({}, 'messages', __default ) }}
+        <strong>
+            <a style="color: #0a66b7" href="{{ damageUrl }}">
+                {{ 'link'|trans({}, 'messages', __default) }}</a>
+        </strong>
+        {{ 'nonRegisteredEmailLinkContentSuffix' |trans({}, 'messages', __default ) }} <br><br><br>
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}

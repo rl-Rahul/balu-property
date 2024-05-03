@@ -1,0 +1,16 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+  {% autoescape false %}
+    {{ 'Dear' |trans({}, 'messages', __default ) }} {{ companyName }},
+    <br><br>
+  {% endautoescape %}
+{% endblock %}
+{% block content %}
+  {% autoescape false %}
+    {{ 'willExpireSoon' |trans({}, 'messages', __default ) }} {{ 'pleaseRenewSubscription' |trans({}, 'messages', __default ) }}
+    <br><br>
+    {{ 'bestRegards' |trans({}, 'messages', __default ) }}, <br>
+    {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}
+{% endblock %}

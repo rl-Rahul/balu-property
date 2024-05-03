@@ -1,0 +1,32 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'hello' |trans({}, 'messages', __default ) }}
+        {{ userFirstName }} {{ userLastName }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block content %}
+    {% autoescape false %}
+        {% if invite == 'prop' %}
+            {{ 'propAdminInvite' |trans({}, 'messages', __default ) }},
+            <a href="{{ url }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a>
+        {% else %}
+            {{ 'propJanitorInvite' |trans({}, 'messages', __default ) }},
+            <a href="{{ url }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a>
+        {% endif %}
+        <br>
+        {{ invitedBy }},
+        <br> <br>
+        {{ 'address' |trans({}, 'messages', __default ) }}: {{ property.streetName }}
+        {% if property.streetNumber is not null %} {{ property.streetNumber }}, {% endif %}
+        {% if property.postalCode is not null %} {{ property.postalCode }}, {% endif %}
+        {{ property.city }}
+        <br><br/>
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}
+
+

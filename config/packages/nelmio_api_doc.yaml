@@ -1,0 +1,18 @@
+nelmio_api_doc:
+    documentation:
+        info:
+            title: Balu 2.0
+            description: Property Management Platform # Your project description
+            version: 2.0.0 # Your current api version
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+                    in: header
+        security:
+            - Bearer: []
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api/2.0/(?!/doc$) # Accepts routes under /api/1.0/ except /api/doc

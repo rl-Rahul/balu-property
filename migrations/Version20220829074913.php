@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+
+namespace DoctrineMigrations;
+
+use Doctrine\DBAL\Schema\Schema;
+use Doctrine\Migrations\AbstractMigration;
+
+final class Version20220829074913 extends AbstractMigration
+{
+    public function getDescription(): string
+    {
+        return '';
+    }
+
+    public function up(Schema $schema): void
+    {
+        $this->addSql('ALTER TABLE balu_document CHANGE path path LONGTEXT DEFAULT NULL');
+        $this->addSql('ALTER TABLE balu_folder CHANGE path path LONGTEXT NOT NULL');
+        $this->addSql('ALTER TABLE balu_temporary_upload CHANGE file_path file_path LONGTEXT DEFAULT NULL');
+    }
+
+    public function down(Schema $schema): void
+    {
+        $this->addSql('ALTER TABLE balu_document CHANGE path path VARCHAR(255) CHARACTER SET utf8mb4 DEFAULT NULL COLLATE `utf8mb4_unicode_ci`');
+        $this->addSql('ALTER TABLE balu_folder CHANGE path path VARCHAR(255) CHARACTER SET utf8mb4 NOT NULL COLLATE `utf8mb4_unicode_ci`');
+        $this->addSql('ALTER TABLE balu_temporary_upload CHANGE file_path file_path VARCHAR(255) CHARACTER SET utf8mb4 DEFAULT NULL COLLATE `utf8mb4_unicode_ci`');
+    }
+}

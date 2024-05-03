@@ -1,0 +1,25 @@
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'Hello' |trans({}, 'messages', __default ) }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block body_text %}
+    {% autoescape false %}
+        {{ emailData.content }} <br> 
+        {{ 'damageTitle' |trans({}, 'messages', __default ) }}: {{bpDamage.title}} <br>
+        {{ 'address' |trans({}, 'messages', __default ) }}: {{apartment.property.streetName}} {{apartment.property.streetNumber}}, {{apartment.property.postalCode}} {{apartment.property.city}} <br>
+        {{ 'damageCreatedBy' |trans({}, 'messages', __default ) }}:  {{updatedBy.firstName}} {{updatedBy.lastName}}  <br>
+        <a href="{{ damageUrl ~ token }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a> 
+        {{ 'viewDamageDetails' |trans({}, 'messages', __default ) }}. <br> <br>
+
+    {% endautoescape %}<br><br>
+    {% autoescape false %}
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}
+
+ 

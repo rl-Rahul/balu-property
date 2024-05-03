@@ -1,0 +1,17 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'hello' |trans({}, 'messages', __default ) }}
+        {{ userFirstName }} {{ userLastName }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block content %}
+    {% autoescape false %}
+        {{ 'youHaveBeenRemoved' |trans({}, 'messages', __default ) }} - {{ objectName }} - - {{ objectName }},
+        <br><br/>
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}

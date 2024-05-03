@@ -1,0 +1,21 @@
+{% set __default = locale
+  ? locale
+  : 'en' %}
+{% block subject %}
+  {% autoescape false %}
+   {{ 'hello' |trans({}, 'messages', __default ) }}
+   {{user.firstName}},
+    <br><br>
+  {% endautoescape %}
+{% endblock %}
+{% block body_text %}
+  {% autoescape false %}
+      {{ 'plzConfirm' |trans({}, 'messages', __default ) }}. 
+      <br><br>  {{ 'propertyDetails' |trans({}, 'messages', __default ) }}: {{damage.apartment.property.streetName}} {{damage.apartment.property.streetNumber}}, {{damage.apartment.property.postalCode}} {{damage.apartment.property.city}}
+  {% endautoescape %}
+  {% autoescape false %}
+    <br><br>{{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+    {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}

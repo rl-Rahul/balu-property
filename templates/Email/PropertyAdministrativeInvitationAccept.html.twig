@@ -1,0 +1,23 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'hello' |trans({}, 'messages', __default ) }}
+        {{ userFirstName }} {{ userLastName }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block content %}
+    {% autoescape false %}
+        {% if invite == 'prop' %}
+            {{ 'propAdminAccept' |trans({}, 'messages', __default ) }}
+        {% else %}
+            {{ 'propJanitorAccept' |trans({}, 'messages', __default ) }}
+        {% endif %}
+        <br><br/>
+    {% endautoescape %}
+    {% autoescape false %}
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}

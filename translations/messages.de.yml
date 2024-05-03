@@ -1,0 +1,707 @@
+#owner registration
+hello : Hallo
+thankYouForRegistering : Besten Dank für Ihre Registrierung bei BALU.
+please : Bitte
+toConfirmRegistration : um Ihre Registrierung zu bestätigen.
+baluTeam : BALU Team
+bestRegards : Freundliche Grüsse
+
+#tenant registration
+inviteToUseBalu : Ihr Vermieter hat Sie eingeladen, die BALU Property App zu verwenden. Mit dieser App können Sie die Reparatur von Schäden in Ihrem Mietobjekt einfach verwalten. BALU ist für Mieterinnen und Mieter kostenlos.
+downloadApp : Bitte laden Sie die App aus dem App-Store
+androidLink : Klicken Sie hier, um die App für Android herunterzuladen.
+iosLink : Klicken Sie hier, um die App für iOS herunterzuladen.
+createdAccount : Wir haben ein Konto für Sie erstellt.
+loginUsingFollowing : Öffnen Sie die App und loggen Sie sich mit diesen Daten ein
+
+#company
+userInvitesYou : Einer unserer Nutzer hat Sie eingeladen, die BALU Property App zu nutzen.
+appUse : Mit dieser App können Sie Offerten und Reparaturaufträge verwalten.
+
+#damage
+tenantRegisteredDamage : Ein Mieter / eine Mieterin hat einen neuen Schadensfall registriert.
+janitorRegisteredDamage : Ein Hausmeister / eine Hausmeisterin hat einen neuen Schadensfall registriert.
+objectOwnerRegisteredDamage : Ein Stockwerkeigentümer / eine Stockwerkeigentümerin hat einen neuen Schadensfall registriert.
+damageTitle : Schadensfall
+damageCreatedBy: Erstellt von
+takeAction : Wir bitten Sie, die nötigen Schritte zu einzuleiten um das Problem zu lösen.
+
+cannotRegister: Registrierung fehlgeschlagen. Bitte versuchen Sie es erneut.
+registeredSuccessfully: Erfolgreich registriert. Bitte bestätigen Sie Ihre E-Mail Adresse, bevor Sie sich anmelden.
+emailNotRegistered : Diese E-Mail ist nicht registriert.
+registrationCompleted: Registrierung erfolgreich abgeschlossen.
+userExists: Benutzer/in existiert bereits.
+userExistsConfirm: Benutzer/in ist bereits registriert. Bitte bestätige deine Email.
+passwordResetMail : E-Mail für Passwort-Reset gesendet.
+invalidUser : Ungültiger Benutzer.
+resetPasswordMailSubject : Passwort erfolgreich zurückgesetzt.
+emailnotvalid : Dies ist keine gültige E-Mailadresse.
+expiredToken : Token ist abgelaufen.
+validToken : Gültiges Token.
+invalidToken : Ungültiges Token
+badRequest : Ungültige Anfrage.
+passwordChanged : Das Passwort wurde erfolgreich geändert
+unableToUpdate : Kann nicht aktualisiert werden
+fetchSuccessfully : Daten wurden erfolgreich abgerufen
+profileEditedSuccessfully : Das Profil wurde erfolgreich bearbeitet.
+oldPasswordCheck : Das alte Passwort ist nicht korrekt.
+unableToSave: Fehler beim Speichern
+FileUploadfailed: Datei-Upload fehlgeschlagen
+deleteFailed: Fehler beim Löschen
+fileDeletedSuccessfully: Die Datei wurde erfolgreich gelöscht
+ownedByOther : Keine Berechtigung
+validFileFormatUpload : Ungültiges Dateiformat oder Dateigröße überschritten Bitte laden Sie eine gültige Datei hoch.
+fileUploadedSuccessfully : Die Datei wurde erfolgreich hochgeladen.
+apartmentsCreated : Das Objekt wurde erfolgreich erstellt
+apartmentsEdited : Die Liegenschaft wurde erfolgreich aktualisiert
+tenantdeletedSuccessfully : Der Mieter / die Mieterin wurde erfolgreich gelöscht
+notATenant : Mieter/in nicht gefunden.
+registrationSuccessMailSubject : Herzlich willkommen bei BALU Property!
+propertySuccess : Neue Liegenschaft erfolgreich hinzugefügt
+propertySuccessInvite : Neue Liegenschaft erfolgreich hinzugefügt. Eine Einladung für die Verwaltung / Hausmeisterschaft wurde versendet.
+propertyDeleted : Liegenschaft erfolgreich gelöscht
+propertyEditedSuccessfully : Liegenschaft erfolgreich bearbeitet
+propertyEditedInvitedSuccessfully : Die Liegenschaft wurde erfolgreich aktualisiert. Eine Einladung für die Verwaltung / Hausmeisterschaft wurde versendet.
+deviceRemovedsuccessfully : Die Geräte-ID wurde erfolgreich entfernt
+invalidDevice : Diese Geräte-ID existiert für den Benutzer nicht.
+noPermissionToView : Sie haben keine Berechtigung, diese/n Nutzer/in anzuzeigen.
+companyAddedSuccessfully : Das Unternehmen wurde erfolgreich hinzugefügt und eine Einladung wurde versendet.
+deletedSuccessfully : Benutzer/in wurde erfolgreich gelöscht.
+damageCreateSuccess : Der Schaden wurde erfolgreich erfasst
+unauthorizedAccess : Unauthorisierter Zugriff
+noPermissionToEdit : Sie haben keine Schreibrechte.
+noPermissionToDelete : Sie haben keine Berechtigung dies zu löschen.
+noPermissionToDeleteDamage : Sie haben keine Berechtigung dieses Ticket zu löschen.
+tenantCreatedSuccessfully : Die Person wurde erfolgreich hinzugefügt und eine Einladung wurde versendet.
+noPermissionApartmentView : Sie haben keine Berechtigung dieses Objekt anzuzeigen.
+notActiveTenant : Ein inaktiver Mandant kann nicht bearbeitet werden.
+invalidStartDate : Das Startdatum ist ungültig.
+emailNotTenant : Diese E-Mail ist bereits registriert.
+userAlreadyExistonStartDate: Für dieses Datum ist bereits ein Mieter vorhanden
+'userAlreadyExistonDate %existingContractDate%': Für Datum %existingContractDate% ist bereits ein Mieter vorhanden
+'userAlreadyExistonDate %existingContractDate% pleaseSetEndDate': Für Datum %existingContractDate% ist bereits ein Mieter vorhanden. Bitte geben Sie ein Enddatum an
+endDateIsManadtory: Mieter mit späterem Datum vorhanden, daher wird Enddatum benötigt
+emailNotEnabled: Inaktive E-Mail-ID, Sie können diese E-Mail nicht verwenden.
+damageEditSuccess : Das Ticket wurde erfolgreich bearbeitet.
+damageEditNoPermission : Sie haben keine Berechtigung das Ticket zu bearbeiten.
+deletionFailed : Löschen fehlgeschlagen.
+attachmentRemoveSuccess : Die Datei wurde erfolgreich entfernt
+damageNoRemovePermission : Sie haben Keine Berechtigung den Anhang zu entfernen.
+damageNoViewPermission : Sie haben keine Berechtigung das Ticket anzuzeigen.
+damageRegisteredMailSubject : Neues Ticket registriert
+ownerClosedDamage : Eigentümer/in hat das Ticket geschlossen
+propertyAdminClosedDamage : Verwaltung hat das Ticket geschlossen
+commentRequired: Kommentar erforderlich
+invalidDamageStatus: Ungültiger Ticket-Status
+damageUpdateSuccess : Das Ticket wurde erfolgreich aktualisiert.
+updatedSuccessfully : Aktualisierung erfolgreich
+damgeNotExist : Das Ticket existiert nicht.
+OWNER_REJECT_DAMAGE : Das Ticket wurde abgelehnt.
+OWNER_SEND_TO_COMPANY_WITH_OFFER : Die Anfrage wurde erfolgreich an das Unternehmen gesendet.
+OWNER_SEND_TO_COMPANY_WITHOUT_OFFER : Die Anfrage wurde erfolgreich an das Unternehmen gesendet.
+TENANT_SEND_TO_COMPANY_WITH_OFFER : Die Anfrage wurde erfolgreich an das Unternehmen gesendet.
+TENANT_SEND_TO_COMPANY_WITHOUT_OFFER : Die Anfrage wurde erfolgreich an das Unternehmen gesendet.
+TENANT_CLOSE_THE_DAMAGE : Mieter/in hat das Ticket geschlossen
+OWNER_CLOSE_THE_DAMAGE : Eigentümer/in das Ticket geschlossen
+COMPANY_ACCEPTS_DAMAGE_WITHOUT_OFFER : Die Anfrage wurde akzeptiert.
+COMPANY_REJECT_THE_DAMAGE : Die Anfrage wurde abgelehnt.
+COMPANY_GIVE_OFFER_TO_TENANT : Das Angebot wurde erfolgreich gesendet.
+COMPANY_GIVE_OFFER_TO_OWNER : Das Angebot wurde erfolgreich gesendet.
+TENANT_ACCEPTS_THE_OFFER : Das Angebot wurde angenommen.
+TENANT_REJECTS_THE_OFFER : Das Angebot wurde abgelehnt
+OWNER_ACCEPTS_THE_OFFER : Das Angebot wurde angenommen
+OWNER_REJECTS_THE_OFFER : Das Angebot wurde abgelehnt
+COMPANY_SCHEDULE_DATE : Neues Datum wurde festgelegt.
+TENANT_ACCEPTS_DATE : Das Datum wurde akzeptiert.
+TENANT_REJECTS_DATE : Das Datum wurde abgelehnt.
+OWNER_ACCEPTS_DATE : Das Datum wurde akzeptiert.
+OWNER_REJECTS_DATE : Das Datum wurde abgelehnt.
+REPAIR_CONFIRMED : Die Reparatur wurde bestätigt.
+COMPANY_ACCEPTS_DAMAGE_WITH_OFFER: Das Unternehmen hat die Anfrage angenommen
+damageStatusChangeMailSubject: Schaden-Status wurde aktualisiert
+TENANT_CREATE_DAMAGE_MAIL_SUBJECT: Schaden-Status wurde aktualisiert
+damageOfferSuccess: Angebot erfolgreich gesendet
+damageOfferAcceptSuccess: Angebot angenommen
+damageOfferRejectSuccess: Angebot abgelehnt
+defectNoPermission: Sie haben keine Berechtigung, ein Ticket zu registrieren.
+defectRegistered: Ticket erstellt.
+registeredDefect: Ticket erstellt
+withReason: Grund
+ratedSuccessfully: Die Bewertung wurde abgeschickt.
+ratingNoPermission: Sie haben Keine Berechtigung das Unternehmen zu bewerten.
+damageAppintmentSuccess: Neuer Termin erfolgreich erstellt
+damageAppintmentEditSuccess: Der Termin wurde erfolgreich bearbeitet
+damageNoConfirmPermission: Sie haben Keine Berechtigung die Reparatur zu bestätigen.
+damageAlreadyConfirmed: Die Reparatur wurde bereits bestätigt
+noDatatoProcess: Keine zu verarbeitenden Daten.
+apartmentDeleted: Objekt erfolgreich gelöscht.
+unableToDelete: Löschen nicht möglich.
+invalidAppointment: ungültiger Termin
+AppointmentBy: Termin erstellt von
+referenceNumberAdded: Interne Referenznummer hinzugefügt
+defectNoPermissionToAddReference : Sie haben keine Berechtigung zum Hinzufügen einer Referenznummer.
+masterDataAddSuccess : Stammdaten erfolgreich hinzugefügt
+masterDataEditSuccess : Stammdaten erfolgreich aktualisiert
+masterDataDeleteSuccess : Stammdaten erfolgreich gelöscht
+# Damage status change mail
+Hello: Hallo
+updatedStatus : hat den Ticket-Status aktualisiert
+to : zu
+clickHere: Klicken Sie hier
+viewDamageDetails: um die Schadensdetails anzuzeigen
+requiringOffer : angefordertes Angebot zur Reparatur des Schadens
+requiringReEstimateOffer: Neue Offerte angefordert
+assignedDamage: zugewiesenes Unternehmen für die Reparatur des Schadens
+manageOfferNoPermission: Sie haben keine Berechtigung, dieses Angebot zu verwalten.
+damageDeleted: Ticket wurde erfolgreich gelöscht.
+companyDeleted: Firma wurde erfolgreich gelöscht.
+deletedTheCompany: Das zugewiesene Unternehmen wurde gelöscht
+sentOffer: hat ein Angebot zur Reparatur des Schadens gesendet
+sentOfferConfirmation : Ihre Angebotsdetails wurden erfolgreich versendet.
+scheduledAppointment : geplante Reparatur für den Schaden
+ConfirmOnlyAfterAppontmentDate: Sie können die Reparatur nicht vor dem Termindatum bestätigen.
+dateExceeded: Termin kann nicht bearbeitet werden. Datum überschritten oder Status geändert
+resetpasswordlinkIs: Bitte klicken Sie auf den Link unten, um Ihr Passwort zurückzusetzen.
+reset :  Hier zurücksetzen.
+dear : Sehr geehrte/r
+on : an
+currentStatusRequired: Aktueller Schadensstatus erforderlich.
+formExpired: Formular abgelaufen. Laden Sie die Seite neu.
+alreadyregisteredcompany: Wenn Sie bereits registriert sind
+tologin: um sich einzuloggen
+readSuccessfully: Benachrichtigung erfolgreich lesen.
+languageChanged: Sprache erfolgreich geändert.
+selectValidLanguage: Bitte wählen Sie eine gültige Sprache.
+addedToObject: Sie werden zu einem neuen hinzugefügt
+accountCreated: Ihr Konto wurde erfolgreich erstellt
+and : und
+loginUsingCredentials: Bitte melden Sie sich mit den folgenden Zugangsdaten an, um Details anzuzeigen
+loginUsingCurrentAccessCode: Bitte melden Sie sich mit dem folgenden Benutzernamen und Ihrem aktuellen Zugangscode an
+username: Benutzername
+accessCode: Zugriffscode
+youAreRegistered : Sie wurden erfolgreich registriert.
+clickToConfirm : Bitte klicken Sie hier um zu bestätigen.
+propertyDetails: Liegenschaftsdetails
+registeredDamage: hat einen Schaden registriert
+damageAssigned : Eine Schadensmeldung für Ihre Firma wurde erstellt.
+acceptOrReject : nehmen Sie den Auftrag an oder lehnen Sie den Auftrag ab.
+address :  Adresse
+ticketCreatedBy : Meldung erstellt durch
+at : um
+companyContact : Kontakt zu ausführender Firma
+newUpdateOnTicket : Der Status eines Schadenfalls wurde aktualisiert.
+updatedBy : Aktualisiert durch
+damageAssignedCompany : Der Schaden wurde einem Unternehmen zugeordnet.
+#Plan change notification email for iOS
+planChangeNotificationSubject : Änderungsbenachrichtigung planen
+apartmentLimitReached : Die maximale Wohnungsgrenze für folgende Immobilie wurde erreicht
+pleaseChangePlanWeb : Aktualisieren Sie den Plan über die Webanwendung, da unsere iOS-App keine Zahlungen unterstützt.
+iosUserPaymentNote: If you are an iOS application user please our web application to complete the payment.
+#notification / mail subject
+OWNER_REJECT_DAMAGE_NOTIFICATION: Schaden abgelehnt
+OWNER_SEND_TO_COMPANY_WITH_OFFER_NOTIFICATION: Der Firma zugewiesener Schaden
+OWNER_SEND_TO_COMPANY_WITHOUT_OFFER_NOTIFICATION: Der Firma zugewiesener Schaden
+TENANT_SEND_TO_COMPANY_WITH_OFFER_NOTIFICATION: Der Firma zugewiesener Schaden
+TENANT_SEND_TO_COMPANY_WITHOUT_OFFER_NOTIFICATION: Der Firma zugewiesener Schaden
+TENANT_CLOSE_THE_DAMAGE_NOTIFICATION: Schaden geschlossen
+OWNER_CLOSE_THE_DAMAGE_NOTIFICATION: Schaden geschlossen
+COMPANY_ACCEPTS_DAMAGE_WITHOUT_OFFER_NOTIFICATION: Schaden akzeptiert
+COMPANY_REJECT_THE_DAMAGE_NOTIFICATION: Schaden abgelehnt
+COMPANY_GIVE_OFFER_TO_TENANT_NOTIFICATION: Angebot eingereicht
+COMPANY_GIVE_OFFER_TO_OWNER_NOTIFICATION: Angebot eingereicht
+TENANT_ACCEPTS_THE_OFFER_NOTIFICATION: Angebot akzeptiert
+TENANT_REJECTS_THE_OFFER_NOTIFICATION: Angebot abgelehnt
+OWNER_ACCEPTS_THE_OFFER_NOTIFICATION: Angebot akzeptiert
+OWNER_REJECTS_THE_OFFER_NOTIFICATION: Angebot abgelehnt
+COMPANY_SCHEDULE_DATE_NOTIFICATION: Datum, das für Reparieren geplant ist
+TENANT_ACCEPTS_DATE_NOTIFICATION: Geplantes Datum akzeptiert
+TENANT_REJECTS_DATE_NOTIFICATION: Geplantes Datum abgelehnt
+OWNER_ACCEPTS_DATE_NOTIFICATION: Geplantes Datum akzeptiert
+OWNER_REJECTS_DATE_NOTIFICATION: Geplantes Datum abgelehnt
+REPAIR_CONFIRMED_NOTIFICATION: Reparatur bestätigt
+COMPANY_ACCEPTS_DAMAGE_WITH_OFFER_NOTIFICATION: Vom Unternehmen akzeptierter Schaden
+DEFECT_RAISED_NOTIFICATION: Fehler ausgelöst
+COMPANY_RESPONSE_PENDING_NOTIFICATION : Bis zu Ihrer Antwort für einen zugewiesenen Schaden
+RESPONSE_PENDING_NOTIFICATION : Ein Schadensfall wartet auf Ihre Reaktion
+role_owner : Eigentümer/in
+role_tenant : Mieter/in
+role_company : Unternehmen
+role_company_user : Unternehmen
+role_janitor : Hausmeister/in
+role_object_owner : Stockwerkeigentümer/in
+role_property_admin : Eigentümer/in
+mailPropertyExpiry :  Abo für Liegenschaft muss erneuert werden
+propertyWillExpireSoon : Das Abo oder der Testzugang für eine Ihrer Liegenschaften wird bald ablaufen.
+pleaseRenewSubscription : Bitte erneuern Sie das Abonnement.
+Dear : Sehr geehrte/r
+phone : Telefon
+email : Email
+contactCompanyIfAny : Bitte kontaktieren Sie das Unternehmen direkt, falls die Reparatur am festgelegten Datum nicht ausgeführt werden kann.
+for :  auf
+retractedMessage: Der folgende Schadensfall wurde vom Eigentümer zurückgezogen und ist Ihnen nicht mehr zugewiesen.
+companyAddress: Adresse
+reasonByOwner: Grund
+companyRetracted: Schadensfall zurückgezogen
+defectNoPermissionToCancelAgreement: Sie können den Vertrag nicht kündigen
+emailCompanyCancelAgreement: Das Unternehmen hat die Vereinbarung storniert
+successfullySwitched: Firma erfolgreich gewechselt
+#payment
+paymentCompleteSuccess: Zahlung erfolgreich abgeschlossen
+paymentComplete: Bezahlvorgang abgeschlossen
+paymentSuccessStaus : Zahlung erfolgreich
+paymentFailedStatus : Zahlung fehlgeschlagen
+
+paymentFailed: Zahlung fehlgeschlagen
+noSubscription: Keine Abonnements gefunden
+cannotProcessPayment : Ihre Zahlung konnte nicht verarbeitet werden.
+unsubscribeSuccess: Abo erfolgreich gekündigt
+unsubscribeFailed: Kündigung des Abos fehlgeschlagen
+repeatedFreeSubscription: Der kostenlose Probezeitraum wurde bereits aufgebraucht.
+#subscription cancellation email
+cancellationFailureMailSubject : Die Kündigung des Stripe-Abonnements ist fehlgeschlagen
+admin: Administrator
+cancellationFailedProperty: Abonnement-Stornierung für die folgende Liegenschaft ist fehlgeschlagen.
+property: Liegenschaft
+objectName : Objektname
+subscriptionid: Abonnement-ID
+mailCompanyExpiry : Das Abo das Unternehmen läuft ab
+willExpireSoon :  Ihr Abo wird bald ablaufen
+
+mailConfirmRepair : Bitte bestätigen Sie die Reparatur
+plzConfirm : Wurde der Schaden behoben? Bitte bestätigen Sie die Reparatur.
+Damage: Schadenfall
+
+#Response failure mail for company
+respondToDamage: Bitte überprüfen und reagieren Sie auf den Ihnen zugewiesenen Schadenfall.
+respondForDamageNotify: Ein Schadenfall wurde Ihnen zugewiesen. Bitte
+respondTrailing: unternehmen Sie die entsprechenden Schritte.
+
+#mail subject
+GENERIC_DAMAGE_CREATE_MAIL_SUBJECT :  Neues Ticket hinzugefügt von %ROLE%
+OWNER_REJECT_DAMAGE_MAIL_SUBJECT: Das Ticket wurde abgelehnt
+OWNER_SEND_TO_COMPANY_WITH_OFFER_MAIL_SUBJECT: Anfrage Schadensmeldung
+OWNER_SEND_TO_COMPANY_WITHOUT_OFFER_MAIL_SUBJECT: Anfrage Schadensmeldung
+TENANT_SEND_TO_COMPANY_WITH_OFFER_MAIL_SUBJECT: Anfrage Schadensmeldung
+TENANT_SEND_TO_COMPANY_WITHOUT_OFFER_MAIL_SUBJECT: Anfrage Schadensmeldung
+TENANT_CLOSE_THE_DAMAGE_MAIL_SUBJECT: Schaden geschlossen für Schadenfall
+OWNER_CLOSE_THE_DAMAGE_MAIL_SUBJECT: Schaden geschlossen für Schadenfall
+COMPANY_ACCEPTS_DAMAGE_WITHOUT_OFFER_MAIL_SUBJECT: Schaden akzeptiert für Schadenfall
+COMPANY_REJECT_THE_DAMAGE_MAIL_SUBJECT: Schaden abgelehnt für Schadenfall
+COMPANY_GIVE_OFFER_TO_TENANT_MAIL_SUBJECT: Angebot eingereicht für Schadenfall
+COMPANY_GIVE_OFFER_TO_OWNER_MAIL_SUBJECT: Angebot eingereicht für Schadenfall
+TENANT_ACCEPTS_THE_OFFER_MAIL_SUBJECT: Angebot akzeptiert für Schadenfall
+TENANT_REJECTS_THE_OFFER_MAIL_SUBJECT: Angebot abgelehnt für Schadenfall
+OWNER_ACCEPTS_THE_OFFER_MAIL_SUBJECT: Angebot akzeptiert für Schadenfall
+OWNER_REJECTS_THE_OFFER_MAIL_SUBJECT: Angebot abgelehnt für Schadenfall
+COMPANY_SCHEDULE_DATE_MAIL_SUBJECT: Termin für Reparatur am %{scheduledDate} um %{scheduledTime}
+TENANT_ACCEPTS_DATE_MAIL_SUBJECT: Geplantes Datum akzeptiert für Schadenfall
+TENANT_REJECTS_DATE_MAIL_SUBJECT: Geplantes Datum abgelehnt für Schadenfall
+OWNER_ACCEPTS_DATE_MAIL_SUBJECT: Geplantes Datum akzeptiert für Schadenfall
+OWNER_REJECTS_DATE_MAIL_SUBJECT: Geplantes Datum abgelehnt für Schadenfall
+REPAIR_CONFIRMED_MAIL_SUBJECT: Reparatur bestätigt für Schadenfall
+WITH_SIGNATURE_REPAIR_CONFIRMED_MAIL_SUBJECT : Reparatur bestätigt mit Unterschrift für Schadenfall
+WITHOUT_SIGNATURE_REPAIR_CONFIRMED_MAIL_SUBJECT : Reparatur bestätigt ohne Unterschrift für Schadenfall
+COMPANY_ACCEPTS_DAMAGE_WITH_OFFER_MAIL_SUBJECT: Vom Unternehmen akzeptierter Schaden für Schadenfall
+DEFECT_RAISED_MAIL_SUBJECT: Problem bei der Reparatur rapportiert
+COMPANY_RESPONSE_PENDING_MAIL_SUBJECT : Bis zu Ihrer Antwort für Schadenfall
+OWNER_CREATE_DAMAGE_MAIL_SUBJECT : Gewählte Firma gelöscht
+PROPERTY_ADMINISTRATIVE_INVITATION_ADMIN_SUBJECT : Einladung zur Verwaltung einer Immobilie
+PROPERTY_ADMINISTRATIVE_INVITATION_JANITOR_SUBJECT : Einladung zur Hauswartung einer Immobilie
+PROPERTY_ADMINISTRATIVE_INVITATION_REJECT_SUBJECT : Die Verwaltung hat die Einladung abgelehnt.
+PROPERTY_JANITOR_INVITATION_REJECT_SUBJECT : Die Hauswartung hat die Einladung abgelehnt.
+PROPERTY_ADMINISTRATIVE_INVITATION_ACCEPT_SUBJECT : Die Verwaltung hat die Einladung angenommen.
+PROPERTY_JANITOR_INVITATION_ACCEPT_SUBJECT : Die Hauswartung hat die Einladung angenommen.
+
+#Favourite List
+addedToFavourite: Firma wurde zur Favoritenliste hinzugefügt
+removedFromFavourite: Firma aus der Favoritenliste entfernt
+doesNotExistFavourite : Unternehmen existiert nicht in Ihrer Favoritenliste
+alreadyExistFavourite : Firma existiert bereits in Ihrer Favoritenliste
+planChangeTitle: Update des Abos
+planChangeDesc: Das Hinzufügen von weiteren Objekten ist kostenpflichtig. Ihre Kreditkarte wird beim Speichern dieses Objekts um den Abobetrag von %planamount% CHF belastet.
+planChangeDescRec: Das Hinzufügen von weiteren Objekten ist kostenpflichtig. Ihre Kreditkarte wird beim Speichern dieses Objekts um den Abobetrag von %planamount% CHF belastet.
+monthly: monatlich
+yearly: jährlich
+quarterly: vierteljährlich
+halfYear: Halbjährlich
+tenantDeactivated: Vorhandener Mieter deaktiviert. Neuer Mieter erfolgreich aktiviert
+
+companyUserAddedSuccessfully: Firmenbenutzer wurde erfolgreich hinzugefügt
+companyUserEditedSuccessfully: Firmenbenutzer wurde erfolgreich aktualisiert
+userAlreadyDeleted: Benutzer ist bereits gelöscht
+
+VIEW_DAMAGE: Schaden anzeigen
+MANAGE_DAMAGE: Schaden verwalten
+EDIT_DAMAGE: Schaden bearbeiten
+DELETE_DAMAGE: Schaden löschen
+
+raisedIssue: Problem registriert
+defectRepair : Reparatur des Defekts
+
+loginFailed: Die Anmeldung ist aufgrund von ungültigen Anmeldeinformationen fehlgeschlagen
+confirmEmail: Bitte bestätigen Sie Ihre E-Mail-Adresse, bevor Sie sich anmelden
+
+categorySuccess :  Kategorie wurde erfolgreich hinzugefügt
+categoryEditSuccess : Kategorie erfolgreich bearbeitet
+categoryDeleteSuccess : Kategorie erfolgreich gelöscht
+companyAlreadyDeleted: Firma wurde bereits gelöscht
+
+pleaseSetEndDate:
+
+paymentTrailing: Die Zahlung wird nach Ablauf Ihres aktuellen Abos abgezogen
+userBlocked: Nutzerstatus wurde erfolgreich geändert
+expiryDateUpdatedSuccessfully: Das Ablaufdatum wurde erfolgreich aktualisiert
+cancelSubscription: Ihr Abonnement wurde gekündigt.
+invalidReceipt: Ungültiger Zahlungsbeleg
+transactionAmountMismatch: Transaktionsbetrag entspricht nicht dem Abonnements-Preis.
+
+# Admin
+Company: Unternehmen
+Owner: Eigentümer/in
+Tenant: Mieter/in
+Company User: Firmenbenutzer/in
+trialing: Erprobung
+succeeded: erfolgreich
+active: aktiv
+failed: gescheitert
+blockedUser: Nutzer blockiert. Bitte wenden Sie sich an den Administrator
+notEligibleAge: Sie müssen 21 Jahre oder älter sein, um sich zu registrieren.
+iosComingSoon: iOS-Version bald verfügbar
+
+#property admin
+propertyAdminAdded: Verwaltung erfolgreich zugewiesen
+propertyAdminRemoved: Verwaltung erfolgreich entfernt
+propertyAdminValidationFailed: ungültiger Liegenschaftssadministrator
+propertyAdminAddedMailsubject: Verwaltung von Liegenschaften zugewiesen
+propertyAdminRemovedMailsubject: Verwaltung von Liegenschaften beendet
+goodDay: Guten Tag
+propertyOwnerSelectedAdmin: Ein Eigentümer hat Ihr Unternehmen für die Bewirtschaftung von Schadensfällen ausgewählt.
+ownerDetails: Eigentümer
+chekAssignedProperty: Bitte melden Sie sich in Ihrem Konto an, um die zugewiesenen Liegenschaften zu prüfen.
+propertyOwnerRemovedAdmin: Ein Eigentümer hat Ihnen die Rechte zur Bewirtschaftung von Schadensfällen entzogen.
+
+#Email
+ownerConfirmRegistration: E-Mail Verifikation für BALU Property
+companyConfirmRegistration: E-Mail Verifikation für BALU Property
+propertyAdminConfirmRegistration: E-Mail Verifikation für BALU Property
+tenantConfirmRegistration: E-Mail Verifikation für BALU Property
+objectOwnerConfirmRegistration: E-Mail Verifikation für BALU Property
+janitorConfirmRegistration: E-Mail Verifikation für BALU Property
+passwordReset: Passwort zurücksetzen
+noDataProvided: keine Daten vorhanden
+listFetchSuccess: Liste erfolgreich geladen
+passwordMisMatch: Passwörter stimmen nicht übrein.
+userRegisteredSuccessful: Die Registration war erfolgreich. Bitte verifizieren Sie Ihre E-Mail-Adresse.
+formError: Formularfehler
+loginSuccess: Login erfolgreich
+userNotFound: Benutzer/in nicht gefunden
+primaryUserNotFound: Benutzer/in nicht gefunden
+userDeleted: Benutzer/in nicht vorhanden oder gelöscht
+userNotEnabled: Benutzer/in nicht aktiviert
+adminUserNotFound: Not an admin_de
+notAdminUser: Not an admin_de
+wrongPasswordCriterion: Passwortkriterien nicht erfüllt
+oldPasswordMismatch: Altes Passwort inkorrekt
+invalidPassword: falsches Passwort
+passwordChangeSuccess: Passwort erfolgreich geändert
+resetPasswordFail: Passwortänderung fehlgeschlagen
+passwordResetSuccess: Passwort erfolgreich zurückgesetzt
+resetMailSuccess: Das E-Mail für das Zurücksetzen des Passwortes wurde versendet.
+emailNotExists: Benutzer nicht gefunden
+tokenKeyExpected: Token expected_de
+oldNewPasswordSame: Altes und neues Passwort sind identisch. Bitte wählen Sie ein anderes...
+profileDetailsFetched: Profildaten erfolgreich geladen
+profileDetailsFetchFailed: Profildaten konnten nicht geladen werden.
+groupUpdateSuccess: Gruppe erfolgreich aktualisiert
+notValidGroup: Ungültige Gruppe
+groupCreateSuccess: Gruppe erfolgreich erstellt
+groupDeleteSuccess: Gruppe erfolgreich gelöscht
+groupAlreadyExists: Gruppe existiert bereits
+shouldNotBlank: Sollte nicht leer sein
+shouldBeString: Sollte ein Text sein
+invalidObjectType: Ungültiger Objekttyp
+shouldBeBool: Sollte bool sein
+userUpdatedSuccessful: Benutzer/in erfolgreich aktualisiert
+linkVerificationSuccess: Link erfolgreich verifiziert
+userVerificationSuccess: Benutzer/in erfolgreich verifiziert
+directoryFetchFailed: Fehler beim Laden des Adressbuches.
+directoryListSuccess: Adressbuch erfolgreich geladen.
+ungrouped: Ungruppiert
+folder: Ordner
+object: Objekt
+uploadFail: Upload fehlgeschlagen
+inviteSuccessfull: Einladung erfolgreich versendet
+alreadyInvited: Einladung bereits versendet
+objectDeleteSuccess: Objekt erfolgreich gelöscht
+invitation: Einladung
+folderFetchSuccess: Ordner erfolgreich geladen
+folderFetchError: Fehler beim Laden der Daten.
+tenantLimitExceeded: Anzahl möglicher Mieter überschritten
+contactCreateSuccess: Vertrag erfolgreich erstellt
+youHaveBeenInvited: Sie sind eingeladen worden zu
+invalidType: Ungültiger Typ
+favourited: Erfolgreich zu den Favoriten hinzugefügt
+unfavourited: Erfolgreich aus den Favoriten entfernt
+invalidRole: Ungültige Rolle
+you: Sie
+owner: Eigentümer/in
+propertyAdmin: Immobilienverwaltung
+selectAtleastOneUser: Bitte wählen Sie mindestens eine Person aus
+alreadyHaveContract: Dieses Objekt hat bereits einen aktiven Vertrag. Sie müssen den aktuellen Vertrag kündigen um einen zukünftigen Vertrag zu erstellen.
+contactEditSuccess: Vertrag erfolgreich bearbeitet
+invalidFolderName: Ungültiger Ordnername
+invalidParent: Etwas ist schief gelaufen.
+folderNameExists: Ordnername existiert bereits
+invalidFileName: Ungültiger Dateiname
+invalidPermissionType: Ungültiger Berechtigungstyp
+userEditedSuccessful: Benutzer/in erfolgreich bearbeitet
+objectSuccess: Objekt erfolgreich erstellt
+invalidTenantType: Ungültige Mietart
+resendInvitationSuccess: Einladung erfolgreich verschickt
+deleteContractSuccess: Vertrag erfolgreich gelöscht
+objectEditSuccess: Objekt erfolgreich bearbeitet
+detailFetchSuccess: Details erfolgreich geladen
+shouldBeBoolean: sollte boolesch sein
+invalidProperty: Ungültige Liegenschaft
+invalidFolder: Ungültiger Ordner
+invalidApartment: Ungültiges Objekt
+activeContractFail: Dieser Vertrag ist aktiv und kann daher nicht gelöscht werden. Kündigen Sie ihn stattdessen.
+documentDeleteSuccess: Dokument erfolgreich gelöscht
+entityNotFound: Kein Eintrag gefunden
+documentEditSuccess: Dokument erfolgreich bearbeiten
+invalidString: Ungültige Zeichenfolge
+invalidDocType: Ungültiges Dokument
+folderSuccess: Ordner erfolgreich erstellt
+folderEditSuccess: Ordner erfolgreich bearbeitet
+noPermission: Sie haben keine Erlaubnis, diese Aktion durchzuführen.
+uploadSuccess: Erfolgreicher Upload
+activeTenantsFoundException: Das Objekt kann nicht gelöscht werden, da es aktive Bewohner hat. Kündigen Sie zuerst den laufenden Vertrag.
+propAdminInvite: Sie wurden in die Rolle eines Immobilienverwalters berufen, um auf die Einladung zu reagieren
+propJanitorInvite: Sie wurden eingeladen, die Rolle der Hausmeisterschaft zu übernehmen, um auf die Einladung zu reagieren
+propAdminReject: Ihre Einladung zur Immobilienverwaltung wurde abgelehnt
+propJanitorReject: Ihre Einladung als Hausmeister wurde abgelehnt
+propAdminAccept: Ihre Einladung zur Immobilienverwaltung wurde angenommen
+propJanitorAccept: Ihre Einladung als Hausmeister ist angenommen worden
+#message
+message: Nachricht
+ticket: Ticket
+question: Frage
+information: Informationen
+
+endDateEmtpy: Das Enddatum darf nicht leer sein
+dateError: Das Enddatum muss später sein als das Startdatum
+noticePeriodFail: Die ausgewählten Termine verstoßen gegen folgende Vertragsbedingungen
+attention: Achtung
+noticePeriod: Kündigungsfrist
+revokeFailed: Widerruf fehlgeschlagen, ein anderer Vertrag ist bereits aktiv.
+revokeSuccess: Vertragskündigung widerrufen
+terminationSuccess: Kündigung erfolgreich
+others: andere
+dateConflictError: Datumskonflikt mit anderem Vertrag
+alreadyHaveFutureContract: Ein zukünftiger Vertrag ist bereits vorhanden
+revokeFailedWithFutureContract: Ein zukünftiger Vertrag ist vorhanden, löschen Sie ihn zuerst, um den aktuellen Vertrag zu widerrufen.
+endDateCannotBePast: Das Enddatum kann nicht in der Vergangenheit liegen.
+dateSuccess: Dieses Datum ist verfügbar
+validationSuccess: Erfolgreiche Validierung
+validationFail: Validierung fehlgeschlagen
+alreadyHaveOpenContract: Sie haben bereits einen offenen Vertrag, löschen Sie diesen zuerst, um einen neuen Vertrag zu erstellen.
+feedBackSuccessfull: Rückmeldung erfolgreich gesendet
+PropertyAdminInvitation: Einladung der Liegenschaftsverwaltung
+alreadyHaveAnActiveContract: Es ist bereits ein aktiver Vertrag vorhanden.
+objectNotFound: Objekt nicht gefunden
+invalidObject: Ungültiges Objekt
+loginUsingCurrentCredentials: Anmeldung mit Ihren aktuellen Anmeldedaten
+userRegisteredSuccessfulWithoutMail: Anmeldung erfolgreich
+minimumCharactersRequiredForSearch: Es werden mindestens 3 Zeichen für die Suche erwartet
+defaultMessageText: Anfrage bezüglich %REPLACE%
+properties: Liegenschaften
+objects: Objekte
+activeTenants: Aktive Bewohner / innen
+user: Benutzer
+companyUserSuccessfull: Firmenbenutzer erfolgreich erstellt
+invalidPermissionKey: Ungültige Erlaubnis
+amountFetchSuccess: Betrag erfolgreich abgezogen
+terminatinDateCantBePast: Das Enddatum darf nicht überschritten werden
+damageSuccess: Ticket erfolgreich erstellt
+editSuccess: Ticket erfolgreich bearbeitet
+messageSuccess: Nachricht erfolgreich gesendet
+PROPERTY_ADMIN_REJECT_DAMAGE: Erfolgreich abgelehnter Schaden
+OBJECT_OWNER_REJECT_DAMAGE: Erfolgreich abgelehnter Schaden
+TENANT_REJECT_DAMAGE: Erfolgreich abgelehnter Schaden
+DEFECT_RAISED: Fehler erfolgreich behoben
+PROPERTY_ADMIN_SEND_TO_COMPANY_WITH_OFFER : Erfolgreich angenommener Schaden
+PROPERTY_ADMIN_SEND_TO_COMPANY_WITHOUT_OFFER : Erfolgreich angenommener Schaden
+COMPANY_GIVE_OFFER_TO_PROPERTY_ADMIN: Angebot erfolgreich gesendet
+PROPERTY_ADMIN_ACCEPTS_THE_OFFER: Angebot erfolgreich angenommen
+PROPERTY_ADMIN_REJECTS_THE_OFFER: Angebot erfolgreich abgelehnt
+PROPERTY_ADMIN_ACCEPTS_DATE: Datum Erfolgreich angenommen
+PROPERTY_ADMIN_REJECTS_DATE: Datum erfolgreich abgelehnt
+PROPERTY_ADMIN_CLOSE_THE_DAMAGE: Schaden erfolgreich abgeschlossen
+JANITOR_SEND_TO_COMPANY_WITH_OFFER: Schaden erfolgreich an Unternehmen übermittelt
+JANITOR_SEND_TO_COMPANY_WITHOUT_OFFER: Schaden erfolgreich an Unternehmen übermittelt
+COMPANY_GIVE_OFFER_TO_JANITOR: Angebot erfolgreich gesendet
+JANITOR_ACCEPTS_THE_OFFER: Angebot erfolgreich angenommen
+JANITOR_REJECTS_THE_OFFER: Angebot erfolgreich abgelehnt
+JANITOR_ACCEPTS_DATE: Datum Erfolgreich angenommen
+JANITOR_REJECTS_DATE: Datum erfolgreich abgelehnt
+JANITOR_CLOSE_THE_DAMAGE: Schaden erfolgreich abgeschlossen
+OBJECT_OWNER_SEND_TO_COMPANY_WITH_OFFER: Schaden erfolgreich an Unternehmen übermittelt
+OBJECT_OWNER_SEND_TO_COMPANY_WITHOUT_OFFER: Schaden erfolgreich an Unternehmen übermittelt
+COMPANY_GIVE_OFFER_TO_OBJECT_OWNER: Angebot erfolgreich gesendet
+OBJECT_OWNER_ACCEPTS_THE_OFFER: Angebot erfolgreich angenommen
+OBJECT_OWNER_REJECTS_THE_OFFER: Angebot erfolgreich abgelehnt
+OBJECT_OWNER_ACCEPTS_DATE: Datum Erfolgreich angenommen
+OBJECT_OWNER_REJECTS_DATE: Datum erfolgreich abgelehnt
+OBJECT_OWNER_CLOSE_THE_DAMAGE: Schaden erfolgreich abgeschlossen
+youHaveBeenRemoved: Objekt wurde gelöscht und Sie wurden aus dem Objekt entfernt
+TenantNotification: Objekt gelöscht!
+propertyDeleteSuccess: Liegenschaft erfolgreich gelöscht
+objectLimit: bis zu %objectNumber% Objekte
+features: Alle Funktionen enthalten
+contractPeriod: Keine Mindestvertragslaufzeit
+cancellation: Monatliche Kündigung
+moreInfo: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.  Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+description_trial: In diesem 15-tägigen Probe-Abo sind alle Funktionen enthalten. Nach Ablauf der Testperiode, kann das Probe-Abo jederzeit in ein Premium-Abo umgewandelt werden. Die bereits vorhandenen Daten bleiben vollständig erhalten.
+description_basic: Im Basis-Abo sind alle Funktionen enthalten. Es kann damit eine Liegenschaft mit 2 Objekten verwaltet werden (z.B. 1 Wohnung und 1 Parkplatz).
+description_silver: Das Silber-Abo enthält alle Funktionen und es können insgesamt 10 Objekte für die Liegenschaft verwaltet werden (z.B. 5 Wohnungen und 5 Parkplätze).
+description_gold: Das Gold-Abo ist die richtige Wahl für grosse Liegenschaften mit bis zu 40 Objekten, welche verwaltet werden müssen.
+description_platinum: Für riesige Überbauungen ohne festgelegte Objektanzahl empfiehlt sich unser Platin-Abo.
+platinumLimitation: Keine Begrenzung der Anzahl der Objekte
+trialLimit: Kostenlose 15-Tage-Testversion
+planFetchSuccessfull: Erfolgreich abgeholte Pläne
+objectActivationCountReached: Bitte aktualisieren Sie Ihr Abonnement für den Zugriff auf das Objekt
+objectActivationSuccess: Objekt erfolgreich aktiviert
+unSubscribed: Erfolgreich abbestellt
+exceededResetCount: Reset-Zählgrenze überschritten.
+objectResetSuccess: Wohnung erfolgreich aktiviert
+objectDeactivateSuccess: Wohnung erfolgreich deaktiviert
+userMin: From %userMin% Firmenkunden
+userMax: Up to %userMax% Firmenkunden
+companyUserLimitReached: Unternehmensbenutzer erfolgreich erstellt, wird aber erst nach Upgrade des Plans aktiviert
+offerRequestAdded: Angebotsanfrage erfolgreich hinzugefügt
+trialPeriod: 1 Mona
+noOfUsers: Unbegrenzte Anzahl von Benutzern im Unternehmen
+propertyAdministrationSuccess: Property Administration erfolgreich eingestell
+propertyJanitorSuccess: Hausmeister erfolgreich eingestellt
+propertyAdministrationRejectSuccess: Einladung erfolgreich abgelehnt
+invitedBy: Eingeladen von
+FREE_PLAN:
+  noOfUsers: Unbegrenzte Anzahl von Benutzern im Unternehmen
+  trialLimit: 1 Monat
+  features: Alle Funktionen enthalten
+  contractPeriod: Keine Mindestvertragslaufzeit
+  cancellation: Monatliche Kündigung
+  description: Sie könnten Balu Property kostenlos für 30 Tage testen.
+Company_Subscription_Plan_Tier_1:
+  noOfUsers: Keine zusätzlichen Mitarbeiter/innen
+  trialLimit: 1 Monat
+  features: Alle Funktionen enthalten
+  contractPeriod: Keine Mindestvertragslaufzeit
+  cancellation: Monatliche Kündigung
+  description: Wählen Sie dieses Abo, wenn sind ein Unternehmen mit maximal 5 Mitarbeitern und Mitarbeiterinnen sind, welche BALU gemeinsam nutzen werden.
+Company_Subscription_Plan_Tier_2:
+  noOfUsers: Bis zu %userMax% Mitarbeiter/innen
+  trialLimit: 1 Monat
+  features: Alle Funktionen enthalten
+  contractPeriod: Keine Mindestvertragslaufzeit
+  cancellation: Monatliche Kündigung
+  description: Wählen Sie dieses Abo, wenn sind ein Unternehmen mit maximal %userMax% Mitarbeitern und Mitarbeiterinnen sind, welche BALU gemeinsam nutzen werden.
+Company_Subscription_Plan_Tier_3:
+  noOfUsers: Up to %userMax% Firmenkunden
+  trialLimit: 1 Monat
+  features: Alle Funktionen enthalten
+  contractPeriod: Keine Mindestvertragslaufzeit
+  cancellation: Monatliche Kündigung
+  description: Wählen Sie dieses Abo, wenn Sie keine Einschränkungen haben wollen, wieviele Mitarbeiter und Mitarbeiterinnen BALU gemeinsam nutzen können.
+Company_Subscription_Plan_Tier_4:
+  noOfUsers: Unbegrenzte Anzahl von Unternehmensnutzern
+  trialLimit: 1 Monat
+  features: Alle Funktionen enthalten
+  contractPeriod: Keine Mindestvertragslaufzeit
+  cancellation: Monatliche Kündigung
+  description: Wählen Sie dieses Abo, wenn Sie keine Einschränkungen haben wollen, wieviele Mitarbeiter und Mitarbeiterinnen BALU gemeinsam nutzen können.
+userActivationSuccess: Benutzer erfolgreich aktiviert
+floor : Fußboden
+landIndex : Basis-Index
+objectType : Objekttyp
+referenceIndex : Referenz-Index
+ticketAddedBy: Ticket hinzugefügt von
+ticketEditedBy : Ticket bearbeitet von
+reviewedAndAccepted: Geprüft und angenommen von
+offerRequested: Angebot angefordert
+offerRequestReceived: Angebotsanfrage erhalten von
+offerReceivedFrom: Angebot erhalten von
+offerSent: Angebot gesendet
+totalChf: Gesamt CHF
+orderPlaceWith: Auftrag erteilt an
+companyAssigned: Zugewiesenes Unternehmen
+offerAccepted: Angebot angenommen
+offerRequestAccepted: Angebotsanfrage angenommen von
+appointmentFixed: Termin festgelegt
+appointmentRescheduled: Termin wird verschoben
+defectRaised: Fehler ausgelöst von
+ticketClosedBy: Ticket geschlossen von
+ticketConfirmedBy: Datum des Termins bestätigt von
+ticketRejectedBy: Ernennungsdatum abgelehnt von
+companyRated: Unternehmen bewertet
+ratingReceived: Erhaltene Bewertung
+ticketAddedSubject: Ticket hinzugefügt
+reviewedAndAcceptedSubject: Geprüft und angenommen
+offerRequestedSubject: Angebot angefordert
+offerRequestReceivedSubject: Angebotsanfrage erhalten
+offerReceivedFromSubject: Angebot erhalten
+offerSentSubject: Angebot gesendet
+orderPlaceSubject: Auftrag erteilt
+companyAssignedSubject: Zugewiesenes Unternehmen
+offerAcceptedSubject: Angebot angenommen
+offerRequestAcceptedSubject: Angebotsanfrage angenommen
+appointmentFixedSubject: Termin festgelegt
+appointmentRescheduledSubject: Termin wird verschoben
+repairCompleted: Reparatur abgeschlossen durch
+repairCompletedSubject: Reparatur abgeschlossen
+defectRaisedSubject : Fehler ausgelöst
+ticketClosedSubject: Ticket geschlossen
+ticketConfirmedSubject: Ernennungsdatum bestätigt
+ticketRejectedSubject: Ernennungsdatum abgelehnt
+userRegistrationFailed: Anmeldung eines Gastbenutzers fehlgeschlagen
+guestUserVerification: Gastbenutzer-Verifizierungscode
+thankYouForYourInterest: Danke für ihr Interesse and BALU Property
+toValidateAccount: um ihre E-Mail zu verifizieren
+guestUserRegistrationSuccessful: Gast-Benutzer registriert und ein Code für den Zugang wurde and die entsprechende E-Mail-Adresse versendet.
+contractTenantSubject: Neuer Mietvertrag hinzugefügt
+contractTenantContentLine1: Sie wurden zu einem neuen Mietvertrag in BALU Property hinzugefügt von
+contractTenantContentLine2: Für die folgende Liegenschaft
+generatedObject: Allgemein / Umgebung
+monthlyPayment: Monatliche Zahlung
+yearlyPayment: Jährliche Zahlung
+updateNonRegisteredEmailSubject: Ein neues Ticket wurde Ihnen zugewiesen.
+nonRegisteredEmailSubject: Eines Ihrer Tickets wurde aktualisiert.
+nonRegisteredEmailIntroContent:  Ein Benutzer von Balu.Property möchte Ihnen einen Schadenfall zuweisen.
+nonRegisteredEmailLinkContentPrefix: Bitte folgen Sie dem Link
+nonRegisteredEmailLinkContentSuffix: um sich die Details des Schadenfalls anzusehen.
+link: Link
+nonRegisteredEmailUpdateIntroContent:  Eines Ihrer Tickets wurde aktualisiert
+accessDenied: Sie sind nich authorisiert sich dieses Ticket anzusehen.
+guestUserValidation: Validierung Gast-Benutzer
+guestUserValidationMailSend: Eine E-Mail zur Validierung des Gast-Benutzers wurde versendet.
+enterCode: Bitte geben Sie den Zugangscode ein.
+upgradeSubscription: Bitte aktualisieren Sie Ihr Abonnement
+updateFailed: Aktualisierung fehlgeschlagen
+freePlanAdminText: Freier Plan
+noEmailExists: No email exists_de
+hasActiveContract: An active contract is present_de
+noUserFound: User not found_de
+janitorEnabled: Janitor added to the loop_de
+janitorDisabled: Janitor removed from the loop_de
+janitorPresent: Janitor present in this property_de
+janitorInvited: Janitor invitation present in this property_de
+userAllocationExists: User allocation exists_de
+janitorAlreadyPresent: Janitor already present in this property_de
+userAlreadyAvailableInDirectory: User already available in directory_de
+userEditFailed: User edited failed_de
+contractObjectOwnerContentLine1: Sie wurden zu einem neuen Vertrag als Objekteigentümer in BALU Property hinzugefügt von
+contractObjectOwnerContentLine2: Für die folgende Liegenschaft
+contractObjectOwnerSubject: Neuer Vertrag als Objekteigentümer hinzugefügt
+invalidMessageId: Invalid Message Id_de
+messageUpdatedSuccessfully: Message updated successfully_de

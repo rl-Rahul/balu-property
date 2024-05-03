@@ -1,0 +1,12 @@
+liip_imagine:
+    resolvers:
+        default:
+            web_path: ~
+    filter_sets:
+        thumbnail:
+            quality: 60
+            cache: ~ 
+    loaders:
+        default:
+            filesystem:
+                data_root: "%kernel.project_dir%/%env(UPLOAD_FILE_FOLDER)%"

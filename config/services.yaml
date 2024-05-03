@@ -1,0 +1,142 @@
+parameters:
+    app.client.id: '%env(CLIENT_ID)%'    
+    secret: '%env(APP_SECRET)%'
+    token_expiry_hours : 240
+    email_validity_ttl: PT24H
+    app_secret:   '%env(APP_SECRET)%'   
+    one_signal_url:   '%env(ONE_SIGNAL_URL)%'    
+    one_signal_header:  '%env(ONE_SIGNAL_HEADER)%'    
+    push_app_id: '%env(PUSH_APP_ID)%'   
+    from_email:  '%env(FROM_EMAIL)%'    
+    forgot_password_url: '%env(FORGOT_PASSWORD_URL_SUFFIX)%'
+    more_url: '%env(MORE_URL_SUFFIX)%'
+    registration_url: '%env(REGISTRATION_URL_SUFFIX)%'
+    FE_DOMAIN: '%env(FE_BASE_URL)%'
+    BE_DOMAIN: '%env(BE_BASE_URL)%'
+    default_language: 'en'
+    web_login_url : /?page=LoginPage
+    damage_view_url : /?page=DamageStatusPage&token=
+    damage_view_url_company : /?page=CompanyDamageDetailPage&token=
+    property_administrative_invitation_url : admin-invitation
+    damage_view_path : damage/
+    property_documents_folder: 'p%s/documents'
+    file.root_path: '%env(UPLOAD_FILE_FOLDER)%/property/'
+    company_logo_path: '%env(UPLOAD_FILE_FOLDER)%/company/'
+    root_directory: '%kernel.project_dir%/'
+    max_upload_count: 5
+    max_upload_count_ticket: 3
+    default_subscription_period: [30, 365]
+    file_size_max: 5000000  # 5MB    
+    apartment_count :
+        single_apartment_image_path : '/uploads/apartmentIcons/single.png'
+        multiple_apartment_image_path :  '/uploads/apartmentIcons/multiple.png'
+        default_apartment_image_path : '/uploads/apartmentIcons/noapartment.jpg'
+    user_roles:
+        'owner': 'owner'
+        'tenant': 'tenant'
+        'company': 'company'
+        'admin': 'admin'
+        'company_user': 'company_user'
+        'property_admin': 'property_admin'
+        'janitor': 'janitor'
+        'object_owner': 'object_owner'
+    list_limit: 10
+    temp_upload_path: '%env(FILES_FOLDER)%/documents_temp'
+    temp_upload_reference: '%kernel.project_dir%/%env(UPLOAD_FILE_FOLDER)%/documents_temp'
+    property_path: '%env(FILES_FOLDER)%/property'
+    tenant_limit: 5
+    image_category:
+        photos : 1
+        floor_plan : 2
+        bar_code : 3
+        offer_doc : 4
+        defect : 5
+        confirm: 6 
+    image_sizes: { 1: '345*180',  2: '50*50', 3: '40*40', 4: '130*130', 5: '90*90', 6: '544*450'}
+    default_time_zone: UTC
+    stripe_webhook_secret: '%env(STRIPE_WEBHOOK_SECRET)%'
+    stripe_secret: '%env(STRIPE_SECRET_KEY)%'
+    files_folder : '%env(UPLOAD_FILE_FOLDER)%'
+    public_path : '%env(PUBLIC_PATH)%'
+    damage_path : '%kernel.project_dir%/%env(PUBLIC_PATH)%'
+    email_domain: '%env(EMAIL_DOMAIN)%'
+    default_currency: '%env(DEFAULT_CURRENCY)%' 
+    company_response_pending_mail_repeat : '%env(COMPANY_RESPONSE_PENDING_MAIL_REPEAT)%'  
+    response_pending_mail_repeat: '%env(DAMAGE_RESPONSE_PENDING_MAIL_REPEAT)%'
+    company_response_pending_mail: Company Response Pending Mail
+    damage_response_pending_mail: Damage Response Pending Mail
+    email_link_fe: '%env(FE_BASE_URL)%'
+    locale: '%env(LOCALE)%' 
+    payment_details_list_limit: 10
+    admin_payment_details_list_limit: 50
+    payment_details_list_offset: 10
+
+    unresponsive_damage_status: [COMPANY_ACCEPTS_DAMAGE_WITH_OFFER, COMPANY_ACCEPTS_DAMAGE_WITHOUT_OFFER, TENANT_CREATE_DAMAGE, COMPANY_GIVE_OFFER_TO_OWNER,
+                                 COMPANY_GIVE_OFFER_TO_TENANT, OWNER_ACCEPTS_THE_OFFER, TENANT_ACCEPTS_THE_OFFER, COMPANY_SCHEDULE_DATE]
+    repair_confirm_mail_repeat : 2
+    repair_confirm_mail : Repair Confirm Mail
+    confirm_repair_status : REPAIR_CONFIRMED
+    batch_size : 20
+    expiration_limit: 1
+    expiration_limit_final: 2
+    company_expiry_limit: 30
+    company_expiry_days: 5
+    expiry_mail_type : Property Expiry
+    company_expiry_mail_type : Company Plan Expiry
+    damge_with_company_status : [OWNER_SEND_TO_COMPANY_WITH_OFFER,OWNER_SEND_TO_COMPANY_WITHOUT_OFFER,TENANT_SEND_TO_COMPANY_WITH_OFFER,TENANT_SEND_TO_COMPANY_WITHOUT_OFFER]
+    expired_property_listing_limit : 10
+    icon_folder: '%env(CATEGORY_ICON_FOLDER)%'
+    max_reset_count: 2
+    post_payment_url: '%env(POST_PAYMENT_URL)%'
+    portal_url: '%env(PORTAL_URL)%public-ticket-details/%s'
+
+services:
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+            - '../src/Tests/'
+
+    # Eventlistener to listen requests
+    App\EventListener\RequestListener:
+        tags:
+            - { name: kernel.event_listener, event: kernel.request }
+            - { name: kernel.event_listener, event: kernel.controller }
+
+    # Eventlistener to add table prefixes
+    kernel.listener.prefix:
+        class: App\EventListener\TablePrefixEventListener
+        # Adding the table_prefix configuration
+        calls:
+            - [ setConfig, ['%table_prefix%'] ]
+        tags:
+            - { name: doctrine.event_listener, event: loadClassMetadata, method: loadClassMetadata }
+
+
+    # Eventlistener to User Resolve !important Do not delete
+    App\EventListener\UserResolveListener:
+        arguments:
+            - '@request_stack'
+            - '@security.user_providers'
+            - '@security.password_hasher'
+        tags:
+            - { name: kernel.event_listener, event: league.oauth2_server.event.user_resolve, method: onUserResolve }
+
+    App\EventListener\EntityListener:
+        tags:
+            - { name: doctrine.event_listener, event: preUpdate }
+            - { name: doctrine.event_listener, event: postFlush }
+
+    # Eventlistener to handle deadlocks
+#    App\EventListener\DeadlockRetryListener:
+#        arguments:
+#            $retryCount: 3
+#        tags:
+#            - { name: 'kernel.event_listener', event: 'kernel.exception' }
+

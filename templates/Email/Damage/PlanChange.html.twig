@@ -1,0 +1,34 @@
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+  {% autoescape false %}
+    {{ 'Dear' |trans({}, 'messages', __default ) }} {{ owner.firstName }},<br><br>
+  {% endautoescape %}
+{% endblock %}
+{% block body_text %}
+  {% autoescape false %}
+    {{ 'apartmentLimitReached' |trans({}, 'messages', __default ) }}<br>
+    <br>  {{ 'propertyDetails' |trans({}, 'messages', __default ) }}: 
+    {% if property.address %}
+    {{property.address}} 
+    {% endif %}
+    {% if property.streetName %}
+    , {{property.streetName}} 
+    {% endif %}
+    {% if property.streetNumber %}
+    , {{property.streetNumber}} 
+    {% endif %}
+    {% if property.postalCode %}
+    , {{property.postalCode}} 
+    {% endif %}
+    {% if property.city %}
+    , {{property.city}}
+    {% endif %}<br><br>
+    {{ 'pleaseChangePlanWeb' |trans({}, 'messages', __default ) }}
+    <br><a href="{{ url }}">{{ url }}</a>
+  {% endautoescape %}<br><br>
+  {% autoescape false %}
+    {{ 'bestRegards' |trans({}, 'messages', __default ) }}, <br>
+    {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}

@@ -1,0 +1,40 @@
+
+###> symfony/framework-bundle ###
+/.env
+/.env.local
+/.env.local.php
+/.env.*.local
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+/composer.lock
+/.env.dev
+/symfony.lock
+###< symfony/framework-bundle ###
+
+###> Editor and Docker ###
+/app.conf
+/mysql-data
+/.idea
+/public/adminer.php
+/public/files
+/docker-compose.yml
+/docker-compose.override.yml
+/files
+/public/test.php
+/php.ini
+###< Editor and Docker ###
+###> symfony/phpunit-bridge ###
+.phpunit.result.cache
+/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+###< phpunit/phpunit ###
+
+###> league/oauth2-server-bundle ###
+/config/jwt/*.pem
+###< league/oauth2-server-bundle ###

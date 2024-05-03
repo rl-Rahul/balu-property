@@ -1,0 +1,24 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ mailSubject }}
+    {% endautoescape %}
+{% endblock %}
+
+{% block content %}
+    {% autoescape false %}
+        {{ 'Hello' |trans({}, 'messages', __default ) }},
+        <br><br>
+        {{ content1 }}.
+        <br>
+        {{ content2 }},
+        <br><br>
+        {{ 'objectName' |trans({}, 'messages', __default ) }}: {{ apartment.name }} <br>
+        {{ 'address' |trans({}, 'messages', __default ) }}: {{ apartment.property.streetName }} {{ apartment.property.streetNumber }}, {{ apartment.property.postalCode }} {{ apartment.property.city }}
+        <br><br>
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }}, <br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}
+

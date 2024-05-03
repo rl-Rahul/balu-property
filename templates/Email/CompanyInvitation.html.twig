@@ -1,0 +1,31 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+  {% autoescape false %}
+    {{ 'hello' |trans({}, 'messages', __default ) }},
+  {% endautoescape %}
+{% endblock %}
+
+{% block content %}
+  {% autoescape false %}
+    {{ 'userInvitesYou' |trans({}, 'messages', __default ) }} {{ 'appUse' |trans({}, 'messages', __default ) }}
+    <br>
+    <br>
+    {{ 'accountCreated' |trans({}, 'messages', __default ) }} {{ 'loginUsingFollowing' |trans({}, 'messages', __default ) }}.
+    <br>
+    <br>
+    {{ 'username' |trans({}, 'messages', __default ) }}: {{ email }}
+    <br>
+    {{ 'accessCode' |trans({}, 'messages', __default ) }}: {{- password -}}
+    <br><br>
+
+    <a href="{{ loginUrl }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a>
+    {{ 'tologin' |trans({}, 'messages', __default ) }}.
+    <br>
+    <br>
+    <br>
+
+    {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+    {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}
+{% endblock %}

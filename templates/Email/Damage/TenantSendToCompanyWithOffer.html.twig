@@ -1,0 +1,28 @@
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+  {% autoescape false %}
+    {{ 'Hello' |trans({}, 'messages', __default ) }},
+    <br><br>
+  {% endautoescape %}
+{% endblock %}
+{% block body_text %}
+  {% autoescape false %}
+    {% if role == user_roles.company %}
+        {{ 'damageAssigned' |trans({}, 'messages', __default ) }} <a href="{{ companyDamageUrl ~ token }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a>  {{ 'and' |trans({}, 'messages', __default ) }} {{ 'acceptOrReject' |trans({}, 'messages', __default ) }} <br>
+      {% else %}
+        {{ 'damageAssignedCompany' |trans({}, 'messages', __default ) }} <a href="{{ damageUrl ~ token }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a> {{ 'viewDamageDetails' |trans({}, 'messages', __default ) }}.
+      {% endif %}
+        
+        
+    <br>
+    {{ 'damageTitle' |trans({}, 'messages', __default ) }}: {{bpDamage.title}} <br>
+    {{ 'address' |trans({}, 'messages', __default ) }}: {{apartment.property.streetName}} {{apartment.property.streetNumber}}, {{apartment.property.postalCode}} {{apartment.property.city}} <br>
+    {{ 'ticketCreatedBy' |trans({}, 'messages', __default ) }}: {{updatedBy.firstName}} {{updatedBy.lastName}}   
+  {% endautoescape %}<br><br>
+  {% autoescape false %}
+    {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+    {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}
+

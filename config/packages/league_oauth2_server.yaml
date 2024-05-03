@@ -1,0 +1,18 @@
+league_oauth2_server:
+  authorization_server:
+    private_key: '%env(resolve:PRIVATE_KEY)%'
+    private_key_passphrase: '%env(string:PRIVATE_KEY_PASSPHRASE)%'
+    encryption_key: '%env(string:OAUTH2_ENCRYPTION_KEY)%'
+    enable_password_grant: true
+    enable_refresh_token_grant: true
+    enable_client_credentials_grant: true
+    access_token_ttl: PT8H
+    refresh_token_ttl: P1M
+  resource_server:
+    public_key: '%env(resolve:PUBLIC_KEY)%'
+  persistence:
+    doctrine:
+      entity_manager: default
+  scopes:
+    available: ['property']
+    default: ['property']

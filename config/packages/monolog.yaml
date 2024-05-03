@@ -1,0 +1,39 @@
+monolog:
+   channels: ['deprecation', 'terminateContract', 'activateFutureContract', 'request', 'disableProperties', 'disableCompany']
+   handlers:
+       activateFutureContractLogger:
+            # log all messages (since debug is the lowest level)
+            level:    debug
+            type:     stream
+            path:     '%kernel.logs_dir%/future-contracts.log'
+            channels: [activateFutureContract]
+            
+       terminateContract:
+            # log all messages (since debug is the lowest level)
+            level:    debug
+            type:     stream
+            path:     '%kernel.logs_dir%/contract-termination.log'
+            channels: [terminateContract]
+            
+       request:
+            # log all messages (since debug is the lowest level)
+            level:    debug
+            type:     stream
+            path:     '%kernel.logs_dir%/request-logger.log'
+            channels: [request]
+       
+       disableProperties:
+            # log all messages (since debug is the lowest level)
+            level:    debug
+            type:     stream
+            path:     '%kernel.logs_dir%/disable-properties.log'
+            channels: [disableProperties]
+            
+       disableCompany:
+            # log all messages (since debug is the lowest level)
+            level:    debug
+            type:     stream
+            path:     '%kernel.logs_dir%/disable-company.log'
+            channels: [disableCompany]
+       
+    

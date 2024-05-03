@@ -1,0 +1,23 @@
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+  {% autoescape false %}
+    {{ 'Dear' |trans({}, 'messages', __default ) }} 
+    {{ companyName }},
+    <br><br>
+  {% endautoescape %}
+{% endblock %}
+{% block body_text %}
+  {% autoescape false %}
+    {{ 'willExpireSoon' |trans({}, 'messages', __default ) }} {{ 'pleaseRenewSubscription' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}<br><br>
+  {% autoescape false %}
+    {{ 'bestRegards' |trans({}, 'messages', __default ) }}, <br>
+    {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+  {% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}
+
+
+
+
+

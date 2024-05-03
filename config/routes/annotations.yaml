@@ -1,0 +1,8 @@
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+    prefix: '/api/2.0/' # Please change your API version here
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation

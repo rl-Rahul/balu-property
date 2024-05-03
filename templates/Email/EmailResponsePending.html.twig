@@ -1,0 +1,25 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'Hello' |trans({}, 'messages', __default ) }}
+        {{ userFirstName }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block content %}
+    {% autoescape false %}
+        {{ 'respondForDamageNotify' |trans({}, 'messages', __default ) }}
+        <a href="{{ damageUrl ~ token }}">{{ 'clickHere' |trans({}, 'messages', __default ) }}</a> {{ 'respondTrailing' |trans({}, 'messages', __default ) }}
+        <br>
+
+        {{ 'damageTitle' |trans({}, 'messages', __default ) }} : {{ damage.damage.title }} <br>
+        {{ 'propertyDetails' |trans({}, 'messages', __default ) }}:  {{ damage.apartment.property.streetName }} {{ damage.apartment.property.streetNumber }}, {{ damage.apartment.property.postalCode }} {{ damage.apartment.property.city }}
+        <br>
+        {{ 'damageCreatedBy' |trans({}, 'messages', __default ) }}: {{ damageCreatedBy }} <br>
+        <br><br>
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }}, <br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}
+

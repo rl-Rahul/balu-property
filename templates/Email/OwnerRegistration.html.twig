@@ -1,0 +1,20 @@
+{% extends 'BaseEmail.html.twig' %}
+{% set __default = locale ? locale : 'en' %}
+{% block subject %}
+    {% autoescape false %}
+        {{ 'hello' |trans({}, 'messages', __default ) }}
+        {{ userIdentity.firstName }} {{ userIdentity.lastName }},
+        <br><br>
+    {% endautoescape %}
+{% endblock %}
+{% block content %}
+    {% autoescape false %}
+        {{ 'thankYouForRegistering' |trans({}, 'messages', __default ) }} <br>
+        <a href="{{ url }}">
+            {{ 'clickHere' |trans({}, 'messages', __default ) }}
+        </a>, {{ 'toConfirmRegistration' |trans({}, 'messages', __default ) }}
+        <br><br><br>
+        {{ 'bestRegards' |trans({}, 'messages', __default ) }},<br>
+        {{ 'baluTeam' |trans({}, 'messages', __default ) }}
+    {% endautoescape %}
+{% endblock %}
